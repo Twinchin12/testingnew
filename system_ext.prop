@@ -11,6 +11,7 @@ persist.vendor.btstack.enable.twsplussho=true
 
 # Display
 debug.sf.enable_hwc_vds=0
+debug.force_no_blanking=true
 
 # CNE
 persist.vendor.cne.feature=1
