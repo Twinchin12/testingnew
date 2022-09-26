@@ -150,6 +150,9 @@ ro.vendor.product.manufacturer.db=OP_PHONE
 vendor.product.device=OP_PHONE
 vendor.product.manufacturer=OPD
 
+# Display post-processing
+debug.sf.disable_client_composition_cache=1
+
 # DPM
 persist.vendor.dpmhalservice.enable=1
 
