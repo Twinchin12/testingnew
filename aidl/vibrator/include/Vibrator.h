@@ -69,7 +69,6 @@ class Vibrator : public BnVibrator {
 public:
     class InputFFDevice ff;
     class LedVibratorDevice ledVib;
-
     ndk::ScopedAStatus getCapabilities(int32_t* _aidl_return) override;
     ndk::ScopedAStatus off() override;
     ndk::ScopedAStatus on(int32_t timeoutMs,
@@ -90,6 +89,16 @@ public:
     ndk::ScopedAStatus getSupportedAlwaysOnEffects(std::vector<Effect>* _aidl_return) override;
     ndk::ScopedAStatus alwaysOnEnable(int32_t id, Effect effect, EffectStrength strength) override;
     ndk::ScopedAStatus alwaysOnDisable(int32_t id) override;
+    ndk::ScopedAStatus getResonantFrequency(float *resonantFreqHz) override;
+    ndk::ScopedAStatus getQFactor(float *qFactor) override;
+    ndk::ScopedAStatus getFrequencyResolution(float *freqResolutionHz) override;
+    ndk::ScopedAStatus getFrequencyMinimum(float *freqMinimumHz) override;
+    ndk::ScopedAStatus getBandwidthAmplitudeMap(std::vector<float> *_aidl_return) override;
+    ndk::ScopedAStatus getPwlePrimitiveDurationMax(int32_t *durationMs) override;
+    ndk::ScopedAStatus getPwleCompositionSizeMax(int32_t *maxSize) override;
+    ndk::ScopedAStatus getSupportedBraking(std::vector<Braking>* supported) override;
+    ndk::ScopedAStatus composePwle(const std::vector<PrimitivePwle> &composite,
+                               const std::shared_ptr<IVibratorCallback> &callback) override;
 };
 
 }  // namespace vibrator

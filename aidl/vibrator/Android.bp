@@ -48,7 +48,7 @@ cc_library_shared {
         "libutils",
         "liblog",
         "libbinder_ndk",
-        "android.hardware.vibrator-V1-ndk",
+        "android.hardware.vibrator-V2-ndk",
     ],
     export_include_dirs: ["include"]
 }
@@ -70,7 +70,7 @@ cc_binary {
         "libutils",
         "libbase",
         "libbinder_ndk",
-        "android.hardware.vibrator-V1-ndk",
+        "android.hardware.vibrator-V2-ndk",
         "vendor.qti.hardware.vibrator.impl.oplus",
     ],
 }
