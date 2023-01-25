@@ -75,6 +75,9 @@ on boot
     chown system system /sys/kernel/oplus_display/dynamic_osc_clock
     chown system system /sys/kernel/oplus_display/panel_serial_number
 
+    # OTG
+    write /sys/class/oplus_chg/usb/otg_switch 1
+
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
