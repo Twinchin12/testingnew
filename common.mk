@@ -483,5 +483,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Call the BCR setup
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8250-common/sm8250-common-vendor.mk)
