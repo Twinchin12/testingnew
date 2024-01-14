@@ -24,8 +24,8 @@
  
     <!-- Whether to enable Lineage Health Service -->
     <bool name="config_lineageHealthSupported">true</bool>
-    
-<!-- Smart 5G -->
- <bool name="config_supportSmart5G">true</bool>
+
+    <!-- Smart 5G -->
+    <bool name="config_supportSmart5G">true</bool>
 
 </resources>
