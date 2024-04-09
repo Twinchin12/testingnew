@@ -44,6 +44,4 @@
     <!-- Whether device supports Vibration Strength -->
     <bool name="config_deviceSupportsVibStrength">true</bool>
 
-    <!-- Whether device supports Dolby -->
-    <bool name="config_deviceSupportsDolby">true</bool>
 </resources>
