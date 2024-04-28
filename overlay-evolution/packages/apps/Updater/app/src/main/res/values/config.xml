@@ -4,6 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <string name="menu_changelog_url" translatable="false">https://www.projectmatrixx.org/downloads/lemonades</string>
+    <string name="menu_changelog_url" translatable="false">https://www.projectmatrixx.org/downloads/instantnoodlep</string>
 
 </resources>
