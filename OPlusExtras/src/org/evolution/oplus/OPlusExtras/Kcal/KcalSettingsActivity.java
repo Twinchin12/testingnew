@@ -30,7 +30,7 @@ public class KcalSettingsActivity extends CollapsingToolbarBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.kcal);
+        setContentView(com.android.settingslib.collapsingtoolbar.R.layout.kcal);
 
         setupImageSlider();
 
