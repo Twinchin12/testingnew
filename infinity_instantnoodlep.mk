@@ -13,13 +13,32 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 
 # Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-EXTRA_UDFPS_ANIMATIONS := true
+# Gapps
+WITH_GAPPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := false
+
+# Rice Target
+TARGET_ENABLE_BLUR := true
+
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
+INFINITY_MAINTAINER := zizzyboi
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_HAS_UDFPS := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_USE_GOOGLE_TELEPHONY := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := evolution_instantnoodlep
+TARGET_PHONE_LINK_SUPPORTED ?= true
+
+EXTRA_UDFPS_ANIMATIONS := true
+
+PRODUCT_NAME := infinity_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
